@@ -1,34 +1,67 @@
-# Byte-compiled / optimized / DLL files
+# Django #
+*.log
+*.pot
+*.pyc
 __pycache__/
+db.sqlite3
+media/
+
+# If you use .env files for secrets
+.env
+*.env
+
+# Static and media files (generated during runtime)
+staticfiles/
+static/
+
+# Virtual Environment #
+venv/
+ENV/
+env/
+.venv/
+
+# IDEs and editors #
+.vscode/
+.idea/
+*.swp
+*~
+
+# Byte-compiled / optimized / DLL files #
 *.py[cod]
 *$py.class
-# C extensions
-*.so
-# Distribution / packaging
-.Python
+
+# Distribution / packaging #
 build/
 develop-eggs/
 dist/
+downloads/
 eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
 *.egg-info/
 .installed.cfg
-# Unit test / coverage reports
-.coverage
-.tox/
-.pytest_cache/
+*.egg
+
+# Unit test / coverage reports #
 htmlcov/
-# PyCharm & other IDEs
-.idea/
-.vscode/
-# virtual environment
-venv/
-env/
-# OS generated files
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Migrations (optional - keep if you want to version control migrations)
+# **Comment this out if you want to commit migrations**
+#migrations/
+
+# OS files #
 .DS_Store
-.svn
-*.log
-# Django specific files
-/static/CACHE/
-/media/
-# Database files
-*.sqlite3
+Thumbs.db
